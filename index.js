@@ -17,14 +17,6 @@ let a;
 let b;
 let c;
 
-// a = window.prompt("Enter the value of side a");
-// a = Number(a)
-// b = window.prompt("Enter the value of side b");
-// b = Number(b);
-// c = Math.pow(a, 2) + Math.pow(b, 2);
-// c = Math.sqrt(c);
-// console.log ("The value of the hypotenuse side is", c, "cm")
-
 document.getElementById("submitButton").onclick = function(){
    a = document.getElementById("aTextBox").value;
    a = Number(a);
@@ -34,8 +26,8 @@ document.getElementById("submitButton").onclick = function(){
    console.log ("The value of c is", c);
    document.getElementById("cLabel").innerHTML = "Side C is " + c;
 };
-let count = 0;
 
+let count = 0;
 document.getElementById("increaseButton").onclick = function(){
     count += 2; 
     document.getElementById("countLabel").innerHTML = count;
@@ -49,3 +41,13 @@ document.getElementById("decreaseButton").onclick = function(){
     document.getElementById("countLabel").innerHTML = count;
 };
 
+
+let diceA;
+let diceB;
+document.getElementById("rollButton").onclick = function(){
+    diceA = (Math.floor(Math.random() * 6) + 1)
+    document.getElementById("diceA").innerHTML = diceA;
+
+    diceB = (Math.floor(Math.random() * 6) + 1)
+    document.getElementById("diceB").innerHTML = diceB;
+}
