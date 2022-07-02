@@ -1,4 +1,10 @@
 console.log("Hello World")
+let Name = "";
+// do { 
+//     Name = window.prompt("wetin be your name oga")
+    
+// } while (Name == ""  || Name == null);
+console.log(Name, "welcome")
 // const PI = 3.142;
 // let radius = window.prompt("Enter the radius of the circle");
 // radius = Number(radius);
@@ -52,10 +58,13 @@ console.log("Hello World")
 //     document.getElementById("diceB").innerHTML = diceB; 
 // }
 //using .slice to extract variables. strict extracts section of a string without modifying the original
+//in slice, the fist digit is inclusive while the last is not.
+// let fullName = "George Bush";
+// let firstName;
+// let lastName;
+// firstName = fullName.slice(0, fullName.indexOf(" "));
+// lastName = fullName.slice(fullName.indexOf(" ") + 1)
 
-let fullName = "George Bush";
-let firstName;
-let lastName;
-firstName = fullName.slice(0, 6);
-console.log(firstName);
+// console.log(firstName + " welcome");
+// console.log(lastName);
 
